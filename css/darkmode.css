@@ -1,0 +1,126 @@
+body {
+  background-color: #1e1e1e;
+  color: #eeeeee;
+}
+
+* {
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  color: #045138;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.banner,
+footer {
+  background-color: #3a3a3a;
+  color: #eeeeee;
+  border-color: #045138;
+}
+
+.navi_bar button {
+  background-color: #ffffff;
+  color: #045138;
+}
+
+.navi_bar button:hover {
+  background-color: #045138;
+  color: #ffffff;
+}
+
+.content_wrapper {
+  background-color: #1e1e1e;
+}
+
+.learn_bubble,
+.booking_bubble,
+.contact_wrapper,
+.gallery_wrapper {
+  background-color: #3a3a3a;
+  border-left: 8px solid #045138;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  color: #eeeeee;
+}
+
+.learn_bubble *:not(a),
+.booking_bubble *:not(a),
+.contact_wrapper *:not(a),
+.gallery_wrapper *:not(a) {
+  color: #dddddd;
+}
+
+table {
+  background-color: #1e1e1e;
+  color: #eeeeee;
+}
+
+table a {
+  color: #ffffff;
+}
+
+table a:hover {
+  color: #dddddd;
+}
+
+th {
+  background-color: #333333;
+  color: #045138;
+}
+
+td {
+  background-color: transparent;
+  color: #dddddd;
+}
+
+tr:hover {
+  background-color: #2a2a2a;
+}
+
+.lens_caption,
+.photo_caption {
+  color: #cccccc;
+}
+
+.about_content {
+  background-color: #3a3a3a;
+  border-left: 8px solid #045138;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #eeeeee;
+}
+
+.about_content * {
+  color: #dddddd;
+}
+
+#contact,
+#welcome {
+  background-color: #3a3a3a;
+  border: 5px solid #045138;
+  padding: 20px;
+  color: #eeeeee;
+}
+
+.green_button {
+  background-color: #045138;
+  color: #ffffff;
+}
+
+.green_button:hover {
+  background-color: #005e39;
+  color: #ffffff;
+}
+
+.contact_wrapper a {
+  color: #ffffff;
+}
+
+.contact_wrapper a:hover {
+  color: #dddddd;
+}

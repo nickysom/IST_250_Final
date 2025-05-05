@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nick's Photography LLC</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/darkmode.css" id="darkStyles" disabled>
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+  <header class="banner">
+    <div class="header_top">
+      <h1 class="name">Nick's Photography LLC</h1>
+      <button id="menu_toggle" class="menu_button">☰</button>
+    </div>
+
+    <nav class="navi_bar">
+      <ul id="navi_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#photoshoots">Photoshoots</a></li>
+        <li><a href="html/booking.html">Book Me</a></li>
+        <li><a href="html/learn.html">Learn Photography</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="mode_toggle" class="green_button">Light/Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content_wrapper">
+      <section id="welcome" class="contact_wrapper">
+        <h1>Welcome to Nick's Photography Site!</h1>
+      </section>
+
+      <section id="about">
+        <div class="about_wrapper">
+
+          <div class="about_content">
+            <section id="about">
+              <h1>About Me</h1>
+              <p>Thanks for stopping by my little photography studio! My name is Nick Som and we’re based in York, PA. I
+                started photography when I was 12-13 years old, but I didn’t get my first professional camera till 17.
+                I’ve done several professional photoshoots for friends, family, and many others! Come check out my
+                portfolio, learn how to use a camera, or even book me for your events!</p>
+            </section>
+          </div>
+
+          <div class="about_content">
+            <section id="starting_up">
+              <h1>Why Photography?</h1>
+              <p>I first started photography as a fun hobby and it still is for me. At first, I was just using my phone
+                camera to capture different landscapes and objects. After saving enough money, I decided to invest in a
+                professional camera and take better photos. Learning different camera settings and finding the right
+                equipment was not easy. Luckily, I had a family member who was a professional photographer and helped me
+                out. I also found YouTube videos and hands on experience really helpful. For now, I take fun, cute
+                photos for friends and family. I do not claim to be a professional photographer, but I always enjoy
+                working and learning new things.</p>
+            </section>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="photoshoots">
+        <div class="gallery_wrapper">
+          <h1>Past Photoshoots & Content:</h1>
+          <h2>Landscape Photos:</h2>
+          <div class="photos_grid landscape_grid">
+            <div class="photo_item"><img src="images/cheddar_one.jpeg" alt="Cheddar One"></div>
+            <div class="photo_item"><img src="images/cheddar_three.jpeg" alt="Cheddar Three"></div>
+            <div class="photo_item"><img src="images/jello_one.jpeg" alt="Jello One"></div>
+            <div class="photo_item"><img src="images/jello_two.jpeg" alt="Jello Two"></div>
+            <div class="photo_item"><img src="images/jello_three.jpeg" alt="Jello Three"></div>
+            <div class="photo_item"><img src="images/jello_four.jpeg" alt="Jello Four"></div>
+            <div class="photo_item"><img src="images/erin_one.jpeg" alt="Erin One"></div>
+          </div>
+
+          <h2>Portrait Photos:</h2>
+          <div class="photos_grid portrait_grid">
+            <div class="photo_item"><img src="images/cheddar_two.jpeg" alt="Cheddar Two"></div>
+            <div class="photo_item"><img src="images/erin_two.jpeg" alt="Erin Two"></div>
+            <div class="photo_item"><img src="images/erin_three.jpeg" alt="Erin Three"></div>
+            <div class="photo_item"><img src="images/erin_four.jpeg" alt="Erin Four"></div>
+            <div class="photo_item"><img src="images/sky_one.jpeg" alt="Sky One"></div>
+            <div class="photo_item"><img src="images/sky_two.jpeg" alt="Sky Two"></div>
+            <div class="photo_item"><img src="images/sky_three.jpeg" alt="Sky Three"></div>
+          </div>
+      </section>
+
+      <section id="contact" class="contact_wrapper">
+        <h1>Contact Info</h1>
+        <p><strong>Company:</strong> Nick's Photography LLC</p>
+        <p><strong>Name:</strong> Nicky Som (he/him/his)</p>
+        <p><strong>Email:</strong> <a href="mailto:nicksphotos@serp-server.net">nicksphotos@serp-server.net</a></p>
+        <p><strong>Phone:</strong> (555) 123-4567</p>
+        <p><strong>Address:</strong> 123 Corgi Lane, Barktown, PA 19000</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Nick's Photography LLC. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById("menu_toggle");
+    const navLinks = document.getElementById("navi_links");
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+  <script src="js/photos.js"></script>
+  <script src="js/darkmode.js"></script>
+</body>
+
+</html>

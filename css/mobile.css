@@ -1,0 +1,151 @@
+/* Combine the title of the page and the menu icon */
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* To hide the menu icon by default */
+.menu_button {
+  display: none;
+  background: none;
+  font-size: 28px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive: Tablet & Phone */
+@media screen and (max-width: 900px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    background-color: #005e39;
+    color: #ffffff;
+    border-bottom: 5px solid #6aba8d;
+  }
+
+  .navi_bar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .navi_bar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .photos_grid,
+  .landscape_grid,
+  .portrait_grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .video_wrapper iframe {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .learn_image {
+    max-width: 100%;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* Responsive: Phone for 600 pixels or less */
+@media screen and (max-width: 600px) {
+  /* Show the menu icon */
+  .menu_button {
+    display: block;
+  }
+
+  /* Hide the navi links initially */
+  #navi_links {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #005e39;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Show nav links when active */
+  #navi_links.active {
+    display: flex;
+  }
+
+  .navi_bar {
+    align-items: stretch;
+  }
+
+  .photos_grid,
+  .landscape_grid,
+  .portrait_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .setting_row {
+    flex-direction: column;
+  }
+
+  .video_wrapper iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .green_button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .learn_image_side {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .setting_text {
+    min-width: unset;
+  }
+
+  #mode_toggle {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .name {
+    font-size: 22px;
+    text-align: left;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+
+  th,
+  td {
+    padding: 8px 10px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+}
